@@ -1,0 +1,54 @@
+Hyper text transfer protocol: language that a browser use to communicate to the server  
+
+Rules used by browser and server to understand each other 
+
+
+HHTPS: Security of the website, data is encrypted
+
+Inside the request is a URL with methods and headers 
+
+Response include html page or Json file status codes 
+
+Status codes :
+
+200  --->  perfectly ok 
+404 ---> not found not exist
+500 ----> internal server error 
+301 ----> move permanently
+403 -----> forbidden
+
+
+Browser = client chrome safari fire fox 
+Send the request and gets the response 
+
+URL --->  web address specific path or page on a website 
+
+
+GET: asl server to give something 
+post: send info to server 
+
+
+Get: very little info if something
+
+post: any calculation saving /registration
+
+get for reading 
+post for writing 
+gets keep the data in the url
+post keeps data in request body 
+
+
+
+python -m flask --app app run
+
+
+request.methods:
+
+request hold all the info sent by the user
+
+labels mean methods which method user use to make the request
+
+app=Flask(__name__) # object representing our website  tell flask that this is the main file
+
+@app.route("/")   # use to connct specific webpage to specific function
+

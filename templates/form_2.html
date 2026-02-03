@@ -1,0 +1,16 @@
+{%  extends "base.html" %}
+
+{% block content%}
+
+<h3>Enter your details and fill the form to login</h3>
+<p>Make sure the information is authentic</p>
+
+
+<form method="POST" action="/submit">    
+<input type="text" name="user-id" placeholder="Enter your user-id"> <br><br>
+<input type="text" name="password" placeholder="Enter password"><br><br>
+<button type="submit">Login</button>
+</form>
+
+
+{% endblock%}

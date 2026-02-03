@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My first webpage demo {% endblock %}</title>
+    <style>
+        body{font-size: medium; font-weight: bold; color: aqua; background-color: brown; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+        header{background-color: green; padding: 20px; margin: 15px; font-size: medium;}
+        footer{background-color: orange; padding: 20px; font-weight: 500;}
+    </style>
+</head>
+<body>
+    <header> MY site demo</header>
+    <nav>
+        <a href="/">HOME</a>
+        <a href="/about">About us</a>
+    </nav>
+{%block content%}
+
+{% endblock%}
+
+<footer>
+
+<p>@ 2026 we are trying to learn flask let see how it goes copyright claim ISS 3450</p>
+
+</footer>
+
+
+    
+</body>
+</html>

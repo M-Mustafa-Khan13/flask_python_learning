@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <h1> welcome MR. {{name}}</h1>
+    {% if is_topper%}
+    <p>you r a topper v.good</p>
+    {%else%}
+    <p> you are not a good student </p>
+    {%endif%}
+
+    <h3>
+    <ul>
+        {% for subject in subjects %}
+        <li>{{subject}}</li> 
+        {% endfor %}
+
+    </ul>
+    </h3>
+
+
+
+
+</body>
+</html>
